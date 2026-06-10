@@ -11,7 +11,7 @@ El proyecto utiliza técnicas de:
 - Limpieza y procesamiento de datos
 - Análisis de correlación y patrones
 
-para responder la problemática principal:
+Para responder la problemática principal:
 
 > **¿Será un juego exitoso en base a sus tags?**
 
@@ -27,7 +27,6 @@ https://www.kaggle.com/datasets/newnguyn/steam-game-clean
 ## Objetivo del proyecto
 
 Analizar metadata de videojuegos de Steam para identificar patrones relacionados con el éxito de un juego, utilizando variables como:
-
 - Tags
 - Reviews positivas
 - Review Score
@@ -36,7 +35,6 @@ Analizar metadata de videojuegos de Steam para identificar patrones relacionados
 - Popularidad
 
 A través del análisis se busca:
-
 - Detectar tags asociados al éxito.
 - Identificar tendencias del mercado de videojuegos.
 - Analizar distribuciones y comportamiento de reviews.
@@ -46,7 +44,6 @@ A través del análisis se busca:
 ---
 
 ## Tecnologías utilizadas
-
 - Python 3
 - Jupyter Notebook / Google Colab
 - Pandas
@@ -62,13 +59,21 @@ A través del análisis se busca:
 ```bash
 Steam_Game_MetaData/
 │
-├── data/                  # Dataset original y archivos procesados
-├── notebook/              # Notebooks del análisis
-│   └── steam_analysis.ipynb
+├── coding/                        # Scripts, notebook y resultados del EDA
+│   ├── .ipynb_checkpoints/
+│   ├── 01_preparacion.py          # Limpieza y preparación de datos
+│   ├── 02_eda.py                  # Análisis exploratorio de datos
+│   ├── steam_eda.ipynb            # Notebook principal
+│   ├── SteamGames_cleaned.csv     # Dataset limpio
+│   ├── SteamGames_prepared.csv    # Dataset transformado
+│   ├── eda_fig1_overview.png
+│   ├── eda_fig2_dist_outliers.png
+│   ├── eda_fig3_relaciones.png
+│   └── eda_fig4_calidad.png
 │
-├── images/                # Gráficos y visualizaciones
-├── src/                   # Scripts auxiliares
-├── requirements.txt
+├── SteamGames.csv                 # Dataset original
+├── SteamGames_cleaned.csv         # Dataset limpio
+├── SteamGames_prepared.csv        # Dataset preparado para análisis
 └── README.md
 ```
 
@@ -78,7 +83,7 @@ Clonar repositorio:
 
 ```bash
 git clone <url-del-repositorio>
-cd Tarea6-Clasificacion
+cd Proyecto-Steam-Game-MetaData
 ```
 
 Instalar dependencias:
