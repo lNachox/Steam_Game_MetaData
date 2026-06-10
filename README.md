@@ -118,4 +118,4 @@ o abrir directamente en Google Colab.
 ## Asignatura
 
 **ICC732-1: Ingeniería de Datos**  
-**Universidad de la Frontera
+**Universidad de la Frontera ©**
